@@ -179,7 +179,7 @@ def get_pose_distance(
         current_position,
         goal_position.view(-1),
         current_quat,
-        goal_quat.view(-1),
+        goal_quat.reshape(-1),
         vec_weight,
         weight,
         vec_convergence,
